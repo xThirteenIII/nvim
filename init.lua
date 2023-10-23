@@ -11,6 +11,7 @@ spec "plugins.undotree"
 spec "plugins.lspzero"
 spec "plugins.nvimcmp"
 spec "plugins.lsp"
+spec "plugins.mason"
 
 -- This loads the plugin manager
 require "user.lazy"

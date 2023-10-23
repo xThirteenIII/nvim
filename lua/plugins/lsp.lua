@@ -21,6 +21,9 @@ function M.config()
         lsp_zero.default_keymaps({buffer = bufnr})
       end)
 
+      -- Note: If installing a lsp with Mason, need to 
+      -- put the required setup here to make the lsp work.
+
       -- Config gopls
       require('lspconfig').gopls.setup{}
 
