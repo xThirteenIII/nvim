@@ -30,8 +30,8 @@ function M.config()
       -- Bashls
       require('lspconfig').bashls.setup{}
 
-      -- for c, c++ and more
-      require('lspconfig').sourcekit.setup{}
+      -- Swift
+      --require('lspconfig').sourcekit.setup{}
 
       -- javascript, json, typescript etc.
       require('lspconfig').biome.setup{}
