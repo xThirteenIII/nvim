@@ -30,6 +30,21 @@ function M.config()
       -- for c, c++ and more
       require('lspconfig').sourcekit.setup{}
 
+      -- javascript, json, typescript etc.
+      require('lspconfig').biome.setup{}
+
+      -- html
+      require('lspconfig').htmx.setup{}
+
+      -- java
+       require('lspconfig').jdtls.setup{}
+
+      -- python
+      require('lspconfig').pyright.setup{}
+
+      -- rust
+      require('lspconfig').rust_analyzer.setup{}
+
       -- (Optional) Configure lua language server for neovim
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
