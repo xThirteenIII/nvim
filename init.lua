@@ -1,24 +1,10 @@
--- This sets mapleader
-require("thirteen")
-print("Hello")
+-- launch contains a function that creates a table to pass to lazy.lua which loads lazy plugin manager
+require "user.launch"
+-- keymaps sets global leader
+require "user.keymaps"
 
--- lazy plugin manager
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
+-- Plugin tables
+spec "plugins.telescope"
 
---https://github.com/folke/lazy.nvim to see config
-
--- plugins should be a table or a string.
--- A table is a list with your Plugin Spec
-require("lazy").setup("plugins")
-
+-- This must be last thing to do call
+require "user.lazy"
