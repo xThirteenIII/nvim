@@ -2,6 +2,7 @@
 require "user.launch"
 -- keymaps sets global leader
 require "user.keymaps"
+require "user.set"
 
 -- Plugin tables
 spec "plugins.telescope"
