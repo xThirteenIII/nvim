@@ -5,6 +5,12 @@ require "user.keymaps"
 
 -- Plugin tables
 spec "plugins.telescope"
+spec "plugins.rosepine"
 
--- This must be last thing to do call
+-- This loads the plugin manager
 require "user.lazy"
+
+-- Set keymaps after all the plugins are loaded.
+-- How to load them before?
+require "user.keys"
+require "user.colorscheme"

@@ -16,13 +16,13 @@ vim.opt.rtp:prepend(lazypath)
 
 -- plugins should be a table or a string.
 -- A table is a list with your Plugin Spec
-require("lazy").setup{
+require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,
 	ui = {
 		border = "rounded",
 	},
-	  change_detection = {
-	    enabled = true,
-	    notify = false,
-	  },
-}
+	change_detection = {
+	  enabled = true,
+	  notify = false,
+	},
+})
