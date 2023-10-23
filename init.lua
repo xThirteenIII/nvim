@@ -6,6 +6,7 @@ require "user.keymaps"
 -- Plugin tables
 spec "plugins.telescope"
 spec "plugins.rosepine"
+spec "plugins.treesitter"
 
 -- This loads the plugin manager
 require "user.lazy"
