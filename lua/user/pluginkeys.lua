@@ -15,4 +15,4 @@ vim.keymap.set('n', '<leader>fs', function()
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
 
 -- Nvimtree keymaps
-vim.keymap.set('n', '<leader>e', vim.cmd.NvimTreeToggle)
+-- vim.keymap.set('n', '<leader>e', vim.cmd.NvimTreeToggle)

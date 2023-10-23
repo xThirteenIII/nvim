@@ -3,9 +3,8 @@ local M = {
 -- or                              , branch = '0.1.x',
       dependencies = { 'nvim-lua/plenary.nvim' }
 }
-function M.config()	
+function M.config()
 	require("telescope").setup{
-		
 		find_files = {
 			theme = "dropdown",
 			previewer = false,

@@ -1,8 +1,8 @@
 -- This contains vim :set that you want
 -- phat cursor
 -- disable netrw in favor of nvimtree plugin
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
 
 vim.opt.guicursor = ""
 
