@@ -1,8 +1,8 @@
 -- launch contains a function that creates a table to pass to lazy.lua which loads lazy plugin manager
 require "user.launch"
 -- keymaps sets global leader
-require "user.keymaps"
 require "user.set"
+require "user.keymaps"
 
 -- Plugin tables
 spec "plugins.telescope"
@@ -13,8 +13,7 @@ spec "plugins.lspzero"
 spec "plugins.nvimcmp"
 spec "plugins.lsp"
 spec "plugins.mason"
-spec "plugins.nvimtree"
-spec "plugins.bufferline"
+spec "plugins.harpoon"
 
 -- This loads the plugin manager
 require "user.lazy"
