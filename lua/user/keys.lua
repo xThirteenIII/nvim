@@ -11,4 +11,7 @@ vim.keymap.set('n', '<leader>fs', function()
 --vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 --vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+-- Undotree keymaps
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+
 

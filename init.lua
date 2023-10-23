@@ -7,6 +7,10 @@ require "user.keymaps"
 spec "plugins.telescope"
 spec "plugins.rosepine"
 spec "plugins.treesitter"
+spec "plugins.undotree"
+spec "plugins.lspzero"
+spec "plugins.nvimcmp"
+spec "plugins.lsp"
 
 -- This loads the plugin manager
 require "user.lazy"
