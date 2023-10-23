@@ -4,7 +4,8 @@
 --vim.g.loaded_netrw = 1
 --vim.g.loaded_netrwPlugin = 1
 
-vim.opt.guicursor = ""
+-- Set block cursor
+vim.opt.guicursor = 'n-v-c:block-Cursor'
 
 -- line numbers and relative numbers
 vim.opt.nu = true
