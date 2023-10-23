@@ -13,11 +13,13 @@ spec "plugins.lspzero"
 spec "plugins.nvimcmp"
 spec "plugins.lsp"
 spec "plugins.mason"
+spec "plugins.nvimtree"
+spec "plugins.bufferline"
 
 -- This loads the plugin manager
 require "user.lazy"
 
 -- Set keymaps after all the plugins are loaded.
 -- How to load them before?
-require "user.keys"
+require "user.pluginkeys"
 require "user.colorscheme"
