@@ -1,3 +1,7 @@
+-- This sets mapleader
+require("thirteen")
+print("Hello")
+
 -- lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,10 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 
 --https://github.com/folke/lazy.nvim to see config
 
-require("lazy").setup(plugins, opts)
+-- plugins should be a table or a string.
+-- A table is a list with your Plugin Spec
+require("lazy").setup("plugins")
 
-require("
-
-
-require("thirteen")
-print("Hello")
