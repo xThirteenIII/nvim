@@ -51,11 +51,6 @@ function M.config()
       -- rust
       require('lspconfig').rust_analyzer.setup{}
 
-      require('lspconfig').json_lsp.setup{}
-
-      require('lspconfig').cpplint.setup{}
-
-      require('lspconfig').js_debug_adapter.setup{}
 
       -- (Optional) Configure lua language server for neovim
       local lua_opts = lsp_zero.nvim_lua_ls()
