@@ -1,5 +1,5 @@
 -- n stands for normal mode
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move highlighted lines up and down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
