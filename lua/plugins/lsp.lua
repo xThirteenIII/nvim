@@ -57,6 +57,9 @@ function M.config()
         capabilities = capabilities,
       }
 
+      lsp_config.cssls.setup {
+        capabilities = capabilities,
+      }
 
       -- (Optional) Configure lua language server for neovim
       local lua_opts = lsp_zero.nvim_lua_ls()
