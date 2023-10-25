@@ -14,6 +14,7 @@ spec "plugins.nvimcmp"
 spec "plugins.lsp"
 spec "plugins.mason"
 spec "plugins.harpoon"
+spec "plugins.autopair"
 
 -- This loads the plugin manager
 require "user.lazy"
