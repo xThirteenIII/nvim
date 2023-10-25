@@ -23,38 +23,44 @@ function M.config()
 
       -- Note: If installing a lsp with Mason, need to 
       -- put the required setup here to make the lsp work.
+      local lsp_config = require('lspconfig')
 
       -- Config gopls
-      require('lspconfig').gopls.setup{}
+      lsp_config.gopls.setup{}
 
       -- Bashls
-      require('lspconfig').bashls.setup{}
+      lsp_config.bashls.setup{}
 
       -- Swift
       --require('lspconfig').sourcekit.setup{}
 
       -- javascript, json, typescript etc.
-      require('lspconfig').biome.setup{}
-
-      -- html
-      require('lspconfig').htmx.setup{}
+      lsp_config.biome.setup{}
 
       -- c, c++
-      require('lspconfig').clangd.setup{}
+      lsp_config.clangd.setup{}
 
       -- java
-       require('lspconfig').jdtls.setup{}
+       lsp_config.jdtls.setup{}
 
       -- python
-      require('lspconfig').pyright.setup{}
+      lsp_config.pyright.setup{}
 
       -- rust
-      require('lspconfig').rust_analyzer.setup{}
+      lsp_config.rust_analyzer.setup{}
+
+      --Enable (broadcasting) snippet capability for completion
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+      lsp_config.html.setup {
+        capabilities = capabilities,
+      }
 
 
       -- (Optional) Configure lua language server for neovim
       local lua_opts = lsp_zero.nvim_lua_ls()
-      require('lspconfig').lua_ls.setup(lua_opts)
+      lsp_config.lua_ls.setup(lua_opts)
 end
 
 return M
