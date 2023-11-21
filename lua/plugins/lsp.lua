@@ -41,13 +41,16 @@ function M.config()
       lsp_config.clangd.setup{}
 
       -- java
-       lsp_config.jdtls.setup{}
+      lsp_config.jdtls.setup{}
 
       -- python
       lsp_config.pyright.setup{}
 
       -- rust
       lsp_config.rust_analyzer.setup{}
+
+      -- typescript
+      lsp_config.tsserver.setup{}
 
       --Enable (broadcasting) snippet capability for completion
       local capabilities = vim.lsp.protocol.make_client_capabilities()

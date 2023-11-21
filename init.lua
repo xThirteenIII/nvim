@@ -12,8 +12,11 @@ spec "plugins.treesitter"
 spec "plugins.undotree"
 spec "plugins.lspzero"
 spec "plugins.nvimcmp"
-spec "plugins.lsp"
+-- install lsp with mason (cmd:Mason)
 spec "plugins.mason"
+-- require('lspname').setup{} in lsp plugin to enable it
+spec "plugins.lsp"
+
 spec "plugins.harpoon"
 spec "plugins.autopair"
 spec "plugins.mini"
