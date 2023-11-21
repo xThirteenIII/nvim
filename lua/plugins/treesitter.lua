@@ -3,9 +3,27 @@ local M = {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
 function M.config()
 	 require('nvim-treesitter.configs').setup {
 		  -- A list of parser names, or "all" (the five listed parsers should always be installed)
-		  ensure_installed = { "html", "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query", "rust" },
+		  ensure_installed = {"html",
+                              "javascript",
+                              "typescript",
+                              "c",
+                              "lua",
+                              "vim",
+                              "vimdoc",
+                              "query",
+                              "rust",
+                              "astro",
+                              "cmake",
+                              "cpp",
+                              "css",
+                              "go",
+                              "http",
+                              "graphql",
+                              "java",
+                              "php",
+                              "scss"},
 
-		  -- Install parsers synchronously (only applied to `ensure_installed`)
+          -- Install parsers synchronously (only applied to `ensure_installed`)
 		  sync_install = false,
 
 		  -- Automatically install missing parsers when entering buffer

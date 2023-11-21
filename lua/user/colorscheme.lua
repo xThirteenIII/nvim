@@ -1,5 +1,5 @@
 -- Sets default colorscheme
-vim.cmd[[colorscheme rose-pine]]
+vim.cmd[[colorscheme solarized-osaka]]
 
 -- This sets transparent background
 -- 

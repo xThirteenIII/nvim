@@ -7,6 +7,7 @@ require "user.keymaps"
 -- Plugin tables
 spec "plugins.telescope"
 spec "plugins.rosepine"
+spec "plugins.solarized-osaka"
 spec "plugins.treesitter"
 spec "plugins.undotree"
 spec "plugins.lspzero"
@@ -15,6 +16,9 @@ spec "plugins.lsp"
 spec "plugins.mason"
 spec "plugins.harpoon"
 spec "plugins.autopair"
+spec "plugins.mini"
+spec "plugins.lualine"
+spec "plugins.indentline"
 
 -- This loads the plugin manager
 require "user.lazy"
