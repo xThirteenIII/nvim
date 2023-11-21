@@ -19,10 +19,7 @@ function M.config()
         require("ibl").setup({
             indent = {
                 -- indent color is Iris
-                highlight = highlight[2],
                 char = "|",
-                smart_indent_cap = true,
-                priority = 2,
             },
 
             --  The scope is *not* the current indentation level! Instead, it is the
@@ -30,7 +27,8 @@ function M.config()
             -- on the language you are writing.
             scope = {
                 -- active scope color is Violet
-                highlight = highlight[1],
+                char = "|",
+                highlight = highlight[2],
             }
         })
 end
