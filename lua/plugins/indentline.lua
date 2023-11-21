@@ -17,7 +17,7 @@ function M.config()
         require("ibl").setup({
             indent = {
                 highlight = highlight,
-                char = "|",
+                char = "▏",
             }
         })
 end
