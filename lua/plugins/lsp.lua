@@ -11,6 +11,7 @@ local M = {
 -- Language servers must be installed first!
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls
 function M.config()
+
       -- This is where all the LSP shenanigans will live
       local lsp_zero = require('lsp-zero')
       lsp_zero.extend_lspconfig()
@@ -25,8 +26,6 @@ function M.config()
       -- put the required setup here to make the lsp work.
       local lsp_config = require('lspconfig')
 
-      -- Config gopls
-      lsp_config.gopls.setup{}
 
       -- Bashls
       lsp_config.bashls.setup{}
@@ -63,6 +62,9 @@ function M.config()
       lsp_config.cssls.setup {
         capabilities = capabilities,
       }
+
+      -- Config gopls
+      lsp_config.gopls.setup{}
 
       -- (Optional) Configure lua language server for neovim
       local lua_opts = lsp_zero.nvim_lua_ls()

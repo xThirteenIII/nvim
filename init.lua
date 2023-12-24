@@ -16,6 +16,11 @@ spec "plugins.nvimcmp"
 spec "plugins.mason"
 -- require('lspname').setup{} in lsp plugin to enable it
 spec "plugins.lsp"
+spec "plugins.todo"
+
+spec "plugins.dap"
+spec "plugins.dap-go"
+spec "plugins.dapui"
 
 spec "plugins.harpoon"
 spec "plugins.autopair"
@@ -25,6 +30,7 @@ spec "plugins.indentline"
 
 -- This loads the plugin manager
 require "user.lazy"
+require "user.dapuistart"
 
 -- Set keymaps after all the plugins are loaded.
 -- How to load them before?
