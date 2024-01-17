@@ -34,7 +34,7 @@ function M.config()
       --require('lspconfig').sourcekit.setup{}
 
       -- javascript, json, typescript etc.
-      lsp_config.biome.setup{}
+      --lsp_config.biome.setup{}
 
       -- c, c++
       lsp_config.clangd.setup{}
