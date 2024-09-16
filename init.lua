@@ -6,16 +6,25 @@ require "user.keymaps"
 
 -- Plugin tables
 spec "plugins.telescope"
+
+-- colorschemes plugins
 spec "plugins.rosepine"
 spec "plugins.solarized-osaka"
+spec "plugins.fluoroscheme"
+
 spec "plugins.treesitter"
 spec "plugins.undotree"
+
+-- LSP server
 spec "plugins.lspzero"
-spec "plugins.nvimcmp"
--- install lsp with mason (cmd:Mason)
-spec "plugins.mason"
 -- require('lspname').setup{} in lsp plugin to enable it
 spec "plugins.lsp"
+-- install lsp with mason (cmd:Mason)
+spec "plugins.mason"
+
+spec "plugins.nvimcmp"
+
+
 spec "plugins.todo"
 
 spec "plugins.dap"

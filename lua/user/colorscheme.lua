@@ -1,5 +1,5 @@
 -- Sets default colorscheme
-vim.cmd[[colorscheme solarized-osaka]]
+vim.cmd[[colorscheme fluoromachine]]
 
 -- This sets transparent background
 -- 
