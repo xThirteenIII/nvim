@@ -49,7 +49,7 @@ function M.config()
       lsp_config.rust_analyzer.setup{}
 
       -- typescript
-      lsp_config.tsserver.setup{}
+      lsp_config.ts_ls.setup{}
 
       -- assmebly
       lsp_config.asm_lsp.setup{}
